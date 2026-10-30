@@ -37,7 +37,10 @@ AGENTS.md
 Thumbs.db
 
 # Claude
-.claude/
+.claude/*
+!.claude/skills/
+# Apple's own guideline pages: re-pull with scripts/pull-hig.mjs instead of publishing
+.claude/skills/apple-design/references/hig/
 
 # Internal context (not for public repo)
 .context.md
