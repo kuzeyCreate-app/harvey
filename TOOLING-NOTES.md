@@ -28,3 +28,8 @@ nasdaqtrader.com, Yahoo Finance, cdn.playwright.dev, impeccable.style and the he
 - Project hooks are in `.claude/settings.json` (backup: `settings.json.bak`), so Agent Floor opens when Claude Code starts in this folder.
 - It listens on 127.0.0.1:4317 only. Set `AGENT_FLOOR_AUTOLAUNCH=0` to stop hooks from opening the window.
 - The desktop window needs Electron or a Chromium browser on a normal computer; it cannot open in the cloud workspace.
+
+## Browser tools for this project
+- `.claude/skills/playwright-cli`: Playwright CLI skill.
+- `.mcp.json`: project MCP servers `playwright` (`npx @playwright/mcp@latest`) and `chrome-devtools` (`npx chrome-devtools-mcp@latest`).
+  Both need a real Chrome or Chromium on the machine. They could not open pages in the cloud workspace.
