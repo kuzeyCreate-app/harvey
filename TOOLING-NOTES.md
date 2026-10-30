@@ -22,3 +22,9 @@ The originals are untouched, so the same skills still work outside this folder.
 
 ## Not working in the cloud workspace (network allowlist)
 nasdaqtrader.com, Yahoo Finance, cdn.playwright.dev, impeccable.style and the helper download Agent Reach needs for social channels.
+
+## Agent Floor (live 3D office for coding agents)
+- Source: github.com/develop212/agent-floor (not on npm, built from source). Copy lives in `.claude/tools/agent-floor/` (git-ignored).
+- Project hooks are in `.claude/settings.json` (backup: `settings.json.bak`), so Agent Floor opens when Claude Code starts in this folder.
+- It listens on 127.0.0.1:4317 only. Set `AGENT_FLOOR_AUTOLAUNCH=0` to stop hooks from opening the window.
+- The desktop window needs Electron or a Chromium browser on a normal computer; it cannot open in the cloud workspace.
